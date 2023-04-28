@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raython Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/2E450a7O1pjuFDG7oz6gqS_fG6HlXCG1GvPLbtPWX7r_DKG2BiR8c_WsWiBAtlgQRx0" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="player">
+        <!-- Dashboard: The part make users control function -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now Playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+            <!-- CD -->
+            <div class="cd-soundwave">
+                <div class="cd">
+                    <div class="cd-thumb" style=
+                    "background-image: url(
+                    'https://kenh14cdn.com/thumb_w/660/203336854389633024/2023/2/5/photo-14-16755714824581765675906.jpeg')">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fa fa-pause icon-pause"></i>
+                    <i class="fa fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fa fa-random"></i>
+                </div>
+            </div>
+
+            <div class="control_time">
+                <span class="control_time--left"></span>
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                <span class="control_time--right"></span>
+            </div>
+
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!--Playlist: The part displays the list of songs for the user choose  -->
+        <div class="playlist">
+            <!-- <div class="song">
+                <div class="thumb" style="background-image: url('https://i.pinimg.com/474x/8c/80/93/8c809359bf085bdd44345127ce36781b.jpg')"></div>
+                <div class="body">
+                    <h3 class="title">Music Name</h3>
+                    <p class="author">Singer</p>
+                </div>
+                <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
